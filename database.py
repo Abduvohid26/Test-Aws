@@ -2,7 +2,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy import Column, Integer, String, BigInteger
 
-DATABASE_URL = "postgresql+asyncpg://bot_user:2629@localhost:5432/test_user"
+DATABASE_URL = "postgresql+asyncpg://bot_user:2629@localhost:5432/bot_db"
 
 # Asosiy baza konfiguratsiyasi
 engine = create_async_engine(DATABASE_URL, echo=True)
